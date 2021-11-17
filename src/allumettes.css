@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    /* border: 2px black solid; */
+    background-color: #87AAAA;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+#rules{
+    background-color: #F6EABE;
+    padding: 30px 20px 20px 20px ;
+   
+}
+.playerInteraction{    
+    background-color: #87AAAA;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.question{
+    /* border: 2px yellow solid; */
+    font-size: 27px;
+}
+
+.choice{
+    /* border: 2px purple solid; */
+    width: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    background-color: #F6EABE;
+    font-size: 20px;
+    
+    border-radius: 10px;
+    width: 30px;
+}
+
+#allumettes{
+    background-color: #F6EABE;
+    padding-top: 60px;
+    height: 62vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+   
+}
+
+#allumettes img{
+    margin-top: 20px;
+    height: 90px;
+    padding: 10px 5px 10px 10px;
+    
+}

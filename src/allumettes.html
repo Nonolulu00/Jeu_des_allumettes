@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Matches Game</title>
+    <link rel="stylesheet" href="./allumettes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form> 
-        <label>Combien d'allumettes souhaitez vous retirer ?</label>
-        <br> 
-    </form>
-    
-    <div id="Choose_the_number_of_matches">
-        <button id="1" class="playerButton" value="1">1</button>
-        <button id="2" class="playerButton" value="2">2</button>
-        <button id="3" class="playerButton" value="3">3</button>
-        <button id="4" class="playerButton" value="4">4</button>
-        <button id="5" class="playerButton" value="5">5</button>
-        <button id="6" class="playerButton" value="6">6</button>
-    </div>
-  
+    <header>
+        <h1>LE JEU DES ALLUMETTES</h1>
+    </header>
+    <article id="rules">
+        <h3>Règles du jeu</h3>
+        <h4> But du jeu:</h4>
+        <p>Ne pas être celui qui retire la dernière allumette</p>
+        <h4> Déroulé du jeu:</h4>
+        <p>Tour à tour chaque joueur retire entre 1 et 6 allumettes</p>
+    </article>
+    <div class="playerInteraction">
+        <form> 
+            <label class="question">Combien d'allumettes souhaitez vous retirer ?</label>
+            <!-- <br>  -->
+        </form>
+        <div id="choice">
+            <button id="1" class="playerButton" value="1">1 </button>
+            <button id="2" class="playerButton" value="2">2</button>
+            <button id="3" class="playerButton" value="3">3</button>
+            <button id="4" class="playerButton" value="4">4</button>
+            <button id="5" class="playerButton" value="5">5</button>
+            <button id="6" class="playerButton" value="6">6</button>
+        </div>
+    </div> 
+    <div id='allumettes'></div>
 
     <p id='print'>
     </p>
