@@ -27,11 +27,11 @@ function playerChoice(event){
     console.log("player 👩‍🦰");
     matchesSelection = parseInt(value);
     document.getElementById("print").innerHTML = "Vous avez choisi: " + matchesSelection;
-    hideButtons();
     play();
     updateDisplay(matchesSelection);
     checkIfDisplayButtons(totalMatches)
     matchesSelection = 0;
+    hideButtons();
     return;
 };
 
@@ -47,6 +47,8 @@ function play(){
     
     if ( totalMatches == 1 ){
         alert(" 🎊 Congrats you win ! 🎊 ")
+        setTimeout("replay()", 1000);
+        alert("New part right now, let's go !")
     }else{
         setTimeout("robotPlay()", 2000);
     }
@@ -75,6 +77,8 @@ function robotPlay(){
     checkIfDisplayButtons(totalMatches)
     if ( totalMatches == 1) {
         alert(" ☠️ You loose ! Try again ☠️ ")
+        setTimeout("replay()", 1000);
+        alert("New part right now, let's go !")
     }
     return;
 };
@@ -126,4 +130,8 @@ function hideButtons(){
     let buttons = document.getElementById('choice');
     buttons.style.display="none"
     console.log("appel")
+}
+
+function replay(){
+    location.reload()
 }
